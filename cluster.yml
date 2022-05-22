@@ -1,14 +1,14 @@
 # If you intended to deploy Kubernetes in an air-gapped environment,
 # please consult the documentation on how to configure custom RKE images.
 nodes:
-- address: master.ravi.local
+- address: 172.16.176.145
   port: "22"
   internal_address: "172.16.176.145"
   role:
   - controlplane
   - worker
   - etcd
-  hostname_override: master.ravi.local
+  hostname_override: 172.16.176.145
   user: root
   docker_socket: /var/run/docker.sock
   ssh_key: ""
@@ -17,14 +17,14 @@ nodes:
   ssh_cert_path: ""
   labels: {}
   taints: []
-- address: node1.ravi.local
+- address: 172.16.176.146
   port: "22"
   internal_address: "172.16.176.146"
   role:
   - controlplane
   - worker
   - etcd
-  hostname_override: node1.ravi.local
+  hostname_override: 172.16.176.146
   user: root
   docker_socket: /var/run/docker.sock
   ssh_key: ""
@@ -33,14 +33,14 @@ nodes:
   ssh_cert_path: ""
   labels: {}
   taints: []
-- address: node2.ravi.local
+- address: 172.16.176.147
   port: "22"
   internal_address: "172.16.176.147"
   role:
   - controlplane
   - worker
   - etcd
-  hostname_override: node2.ravi.local
+  hostname_override: 172.16.176.147
   user: root
   docker_socket: /var/run/docker.sock
   ssh_key: ""

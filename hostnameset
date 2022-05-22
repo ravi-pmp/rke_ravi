@@ -1,0 +1,1 @@
+ansible -v all -m shell -a "hostnamectl set-hostname {{inventory_hostname}}"               
