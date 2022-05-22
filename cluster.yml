@@ -1,14 +1,14 @@
 # If you intended to deploy Kubernetes in an air-gapped environment,
 # please consult the documentation on how to configure custom RKE images.
 nodes:
-- address: 172.16.176.145
+- address: 172.16.176.153
   port: "22"
-  internal_address: "172.16.176.145"
+  internal_address: "172.16.176.153"
   role:
   - controlplane
   - worker
   - etcd
-  hostname_override: 172.16.176.145
+  hostname_override: 172.16.176.153
   user: root
   docker_socket: /var/run/docker.sock
   ssh_key: ""

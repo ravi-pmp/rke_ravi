@@ -4,6 +4,6 @@ node2.ravi.local ansible_host=172.16.176.147
 
 [all:vars]
 ansible_connection=ssh
-ansible_user=ravi
-ansible_ssh_pass=password
-ansible_sudo_pass=password
+ansible_user=root
+#ansible_ssh_pass=password
+#ansible_sudo_pass=password
