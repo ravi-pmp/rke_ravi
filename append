@@ -1,0 +1,1 @@
+ ansible all -m lineinfile -a "path=/etc/ssh/sshd_config line='PermitRootLogin yes' insertafter='EOF' backup=yes"

@@ -1,0 +1,14 @@
+---
+- name: append
+  hosts: all 
+  become: true 
+  tasks:
+    - name: block
+      blockinfile:
+        path: /etc/hosts 
+        backup: yes
+        insertafter: EOF
+        block: |
+          172.16.176.145 master.ravi.local
+          172.16.176.146 node1.ravi.local
+          172.16.176.147 node2.ravi.local
