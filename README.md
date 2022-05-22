@@ -1,30 +1,6 @@
 
+**Install Kubernetes using Rancher
 
-Ravindra Kumar
-
-
-
-
-
-
-Ravindra Kumar
-Ravindra Kumar
-May 20
-
-·
-5 min read
-·
-
-Listen
-
-
-
-
-
-
-
-Install Kubernetes using Rancher
-Environment
 
 Setup Ansible connection to all machines:
 ==================
