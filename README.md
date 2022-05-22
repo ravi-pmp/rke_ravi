@@ -1,11 +1,12 @@
-Install Kubernetes using Rancher\
+# **Install Kubernetes using Rancher**
+
 Environment
 
 Setup Ansible connection to all machines:\
 Set up passwordless connection to all machines:\
-ssh-copy-id root@172.16.199.115\
-ssh-copy-id root@172.16.199.116\
-ssh-copy-id root@172.16.199.117\
+ssh-copy-id root@172.16.176.153\
+ssh-copy-id root@172.16.176.146\
+ssh-copy-id root@172.16.176.147\
 ansible inventory host file:\
 master ansible_host="172.16.199.115" ansible_user=root\
 node1 ansible_host="172.16.199.116" ansible_user=root\
